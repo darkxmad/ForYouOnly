@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Why Look At Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Only For You</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Auto-play song -->
-  <audio autoplay loop>
+  <audio autoplay loop hidden>
     <source src="your-song.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
-  <!-- Lyrics Section -->
-  <div id="lyrics">
-    <h2>⬇️ Read Below⬇️</h2>
-    <p>
-      Answer...<br>
-      The...<br>
-      Questions...<br>
-     Given...<br>
-     There...<br>
-      ...
-    </p>
-  </div>
+  <div class="container">
+    <!-- Left Lyrics Panel -->
+    <div id="lyrics">
+      <h2>⬇️ Read Below ⬇️</h2>
+      <p>
+        Answer...<br>
+        The...<br>
+        Questions...<br>
+        Given...<br>
+        There...<br>
+        ...
+      </p>
+    </div>
 
-  <!-- Questions Section -->
-  <div id="questions">
-    <h2 id="question-text">Q1: What Do You Think Am I Happy Right Now Or Not?</h2>
-    <div id="answers">
-      <button onclick="handleAnswer('yes')">Yes</button>
-      <button onclick="handleAnswer('no')">No</button>
+    <!-- Right Questions Panel -->
+    <div id="questions">
+      <h2 id="question-text">Q1: What Do You Think Am I Happy Right Now Or Not?</h2>
+      <div id="answers">
+        <button onclick="handleAnswer('yes')">Yes</button>
+        <button onclick="handleAnswer('no')">No</button>
+      </div>
     </div>
   </div>
 
