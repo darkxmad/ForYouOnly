@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    background: black url('rainy.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  
+  /* Optional dark overlay */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  #lyrics, #questions {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #lyrics {
+    width: 50%;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
+  }
+  
+  #questions {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #question-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #answers button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #answers button:hover {
+    background-color: #666;
+  }
+  
